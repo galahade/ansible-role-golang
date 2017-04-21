@@ -31,10 +31,10 @@ env:
     init: /lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
     playbook: test.yml
-  # - distro: fedora24
-  #   init: /usr/lib/systemd/systemd
-  #   run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-  #   playbook: test.yml
+  - distro: fedora24
+    init: /usr/lib/systemd/systemd
+    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+    playbook: test.yml
 
   # Source installation tests.
   - distro: ubuntu1604
@@ -61,10 +61,10 @@ env:
     init: /lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
     playbook: test-source.yml
-  # - distro: fedora24
-  #   init: /usr/lib/systemd/systemd
-  #   run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-  #   playbook: test-source.yml
+  - distro: fedora24
+    init: /usr/lib/systemd/systemd
+    run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
+    playbook: test-source.yml
 
 before_install:
 
