@@ -72,4 +72,5 @@
       state: present
   roles:
   - geerlingguy.git
+  - wtanaka.unzip
   - role_under_test
