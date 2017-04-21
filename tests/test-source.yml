@@ -46,7 +46,8 @@
     - git-svn
     - rsync
     - openssh-server
-    # - openssh-client
+    - openssh-client
+    - python
     - python-dev
     - unzip
     - tar
@@ -61,7 +62,11 @@
     - openssl-devel
     - subversion-perl
     - make
-    - gcc
+    - libcurl4-gnutls-dev
+    - libexpat1-dev
+    - gettext
+    - libssl-dev
+    - build-essential
     - zip
     - sudo
     failed_when: false
