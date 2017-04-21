@@ -38,6 +38,7 @@
       name: "{{ item }}"
       state: latest
     with_items:
+    - sudo
     - git
     - git-svn
     - rsync
@@ -64,7 +65,6 @@
     - libssl-dev
     - build-essential
     - gcc
-    - sudo
     failed_when: false
   - name: add travis
     user:

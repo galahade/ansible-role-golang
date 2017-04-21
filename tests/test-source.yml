@@ -42,6 +42,7 @@
       name: "{{ item }}"
       state: installed
     with_items:
+    - sudo
     - git
     - git-svn
     - rsync
@@ -68,7 +69,6 @@
     - libssl-dev
     - build-essential
     - zip
-    - sudo
     failed_when: false
   - name: add travis
     user:
